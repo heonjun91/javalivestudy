@@ -33,7 +33,7 @@ JVM은 바이트코드를 해석하고 실행하는 가상머신이다. ( Java V
 또한 메모리 관리, Garbage Collection 등을 수행한다
 ```
 
-<img src="../../JDK,JRE.PNG" width="60%" height="50%"></img>
+<img src="../../../../resources/JDK,JRE.PNG" width="60%" height="50%"></img>
 <br>출처 [tcp스쿨](http://tcpschool.com/java/java_intro_programming)
 
 
