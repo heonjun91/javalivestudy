@@ -23,7 +23,7 @@
 
 
 ### 프리미티브 타입 종류와 값의 범위 그리고 기본 값
-<img src="/image/프리미티브타입.PNG" width="80%" height="70%"></img>
+<img src="../../../../resources/image/프리미티브타입.PNG" width="80%" height="70%"></img>
 <br>
 출처 : [https://gbsb.tistory.com/6](https://gbsb.tistory.com/6)
 <br><br>

@@ -125,7 +125,7 @@ int min(int a, int b){
 ---
 ### 연산자 우선순위
 
-<img src = "/image/연산자우선순위.PNG" width="50%" height="40%"></img><br><br>
+<img src = "../../../../resources/image/연산자우선순위.PNG" width="50%" height="40%"></img><br><br>
 
 
 ---

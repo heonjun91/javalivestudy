@@ -33,7 +33,7 @@ JVM은 바이트코드를 해석하고 실행하는 가상머신이다. ( Java V
 또한 메모리 관리, Garbage Collection 등을 수행한다
 ```
 
-<img src="../../../../resources/image/JDK,JRE.PNG" width="60%" height="50%"></img>
+<img src="../../../../resources/image/자바가상머신.PNG" width="60%" height="50%"></img>
 <br>출처 [tcp스쿨](http://tcpschool.com/java/java_intro_programming)
 
 
@@ -87,7 +87,7 @@ Interpreter 방식으로 실행하다가 적절한 시점에 바이트 코드 �
 
 ---
 ### JVM 구성 요소
-<img src="/image/jvm구성요소.PNG" width="60%" height="50%"></img>
+<img src="../../../../resources/image/jvm구성요소.PNG" width="60%" height="50%"></img>
 <br>
 출처 [https://medium.com/webeveloper/jvm-java-virtual-machine-architecture-94b914e93d86](https://medium.com/webeveloper/jvm-java-virtual-machine-architecture-94b914e93d86)
 <br><br>
@@ -124,7 +124,7 @@ Class Loader에 의해 Runtime Data Area 에 적재된 클래스(바이트 코�
 
 
 ### JDK와 JRE의 차이
-<img src="/image/JDK,JRE.PNG" width="60%" height="50%"></img><br>
+<img src="../../../../resources/image/JDK,JRE.PNG" width="60%" height="50%"></img><br>
 출처 [https://medium.com/webeveloper/jvm-java-virtual-machine-architecture-94b914e93d86](https://medium.com/webeveloper/jvm-java-virtual-machine-architecture-94b914e93d86)
 
 * JRE
