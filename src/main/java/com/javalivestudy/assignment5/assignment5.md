@@ -24,7 +24,7 @@ Class 란?
 public class classEx(){
     private int a; // 변수
     
-    public int setA(){  // 메서드
+    public int getA(){  // 메서드
         return a;
     }
 }
@@ -40,7 +40,20 @@ new 란?
   3. 생성자를 호출
 
 ```java
-classEx ex1 = new classEx();
+public class classEx(){
+  private int a; // 변수
+
+  public int getA(){  // 메서드
+    return a;
+  }
+
+  public static void main(String[] args) {
+    classEx ex1 = new classEx();
+  }
+}
+
+
+        
 ```
 
 ---
@@ -50,17 +63,12 @@ classEx ex1 = new classEx();
   - protected : 같은 클래스, 같은 패키지, 자식 클래스
   - private   : 같은 클래스
   - default   : 같은 클래스, 같은 패키지
-```java
-public int setA(){  // 메서드
-    return a;
-}
-```
 
 
 ---
 ### 생성자 정의하는 방법
 ```java
-public Class classEx{
+public class classEx{
       private int a;
       
       //기본 생성자
@@ -85,7 +93,7 @@ class classExTest{
 ### this 키워드 이해하기
 + this ? 객체 자신을 가리키는 키워드
 ```java
-public Class classEx{
+public class classEx{
       private int a;
       
       public void classEx(int a){
@@ -95,7 +103,7 @@ public Class classEx{
 ```   
 + this() ? 자신이 속한 클래스의 생성자
 ```java
-public Class classEx{
+public class classEx{
     public classEx(){
         sout("기본생성자");    
     }
