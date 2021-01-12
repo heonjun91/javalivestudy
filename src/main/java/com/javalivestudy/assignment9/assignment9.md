@@ -7,9 +7,9 @@
 
 [2. 자바가 제공하는 예외 계층 구조](#자바가-제공하는-예외-계층-구조)
 
-[3. Exception과 Error의 차이는?](#Exception과-Error의-차이는?)
+[3. Exception과 Error의 차이는?](#Exception과-Error의-차이는)
 
-[4. RuntimeException과 RE가 아닌 것의 차이는?](#RuntimeException과-RE가-아닌-것의-차이는?)
+[4. RuntimeException과 RE가 아닌 것의 차이는?](#RuntimeException과-RE가-아닌-것의-차이는)
 
 [5. 커스텀한 예외 만드는 방법](#커스텀한-예외-만드는-방법)
 
