@@ -32,10 +32,12 @@
             + 예외 발생 : try -> catch -> finally
             + 예외 미발생 : try -> finally
     ```java
-   
+    
 
     ```
-    - 
+    2. throws
+    3. throw
+    
 ---
 ### 자바가 제공하는 예외 계층 구조
 
