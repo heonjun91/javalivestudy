@@ -19,14 +19,11 @@
 ### 예외 처리 방법
 1. 예외 처리(Exception Handling) 란?
     - 프로그램이 처리되는 동안 특정한 문제가 일어났을 때 처리를 중단하고 다른 처리를 하는 것   
-    - Checked Exception(Exception) : 컴파일 시점에 발생하는 예외, 개발자가 코딩시 예외처리 필수
-    - Unchecked Exception(Runtime Exception) : 프로그램 실행시에 발생하는 예외, 발생할 것을 미리 알 수 없음(개발자의 경험) 
-    
     
 2. 예외 처리 방법
     1. try , catch , finally(옵션)
         - try : 실제 코드가 들어가는 곳(예외가 발생할 가능성이 있는 코드)
-        - catch : 예외 발생 시 처리할 코드
+        - catch : 예외 발생 시 처리할 코드, 여러개 사용 시에 자식클래스를 먼저 작성
         - finally : 예외처리와 상관없이 무조건 수행되는 코드
         - 실행순서
             + 예외 발생 : try -> catch -> finally
@@ -79,7 +76,18 @@ public class assignment9 {
 
 ---
 ### RuntimeException과 RE가 아닌 것의 차이는?
+1. Checked Exception(Exception)
+    - 컴파일 시점에 발생하는 예외, 개발자가 코딩시 예외처리 필수
+    - 주로 프로그램의 사용자들의 동작에 의해서 발생
+    - 존재하지 않는 파일 처리(FileNotFoundException)
+    - 잘못된 데이터 형식(DataFormatException) ...   
+    
 
-
+2. Unchecked Exception(Runtime Exception) 
+    - 프로그램 실행시에 발생하는 예외, 발생할 것을 미리 알 수 없음(개발자의 경험)
+    - 배열범위 벗어남(IndexOutOfBoundsException)
+    - null인 참조변수의 멤버를 호출(NullPointerException)
+    - 클래스간의 잘못된 형변환(ClassCastException)
+    - 정수를 0으로 나누기(ArithmeticException) ...
 ---
 ### 커스텀한 예외 만드는 방법
