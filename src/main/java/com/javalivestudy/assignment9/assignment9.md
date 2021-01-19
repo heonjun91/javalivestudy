@@ -19,8 +19,8 @@
 ### 예외 처리 방법
 1. 예외 처리(Exception Handling) 란?
     - 프로그램이 처리되는 동안 특정한 문제가 일어났을 때 처리를 중단하고 다른 처리를 하는 것   
-    - 일반예외(Exception) : 컴파일 시점에 발생하는 예외, 컴파일러가 개발자에게 예외처리 하라고 알려줌
-    - 실행예외(Runtime Exception) : 프로그램 실행시에 발생하는 예외, 개발자의 경험에 의해 예외처리 해야함   
+    - Checked Exception(Exception) : 컴파일 시점에 발생하는 예외, 개발자가 코딩시 예외처리 필수
+    - Unchecked Exception(Runtime Exception) : 프로그램 실행시에 발생하는 예외, 발생할 것을 미리 알 수 없음(개발자의 경험) 
     
     
 2. 예외 처리 방법
@@ -32,10 +32,13 @@
             + 예외 발생 : try -> catch -> finally
             + 예외 미발생 : try -> finally   
     
-    2. throws
+    2. throw(사용자 예외 발생)
+        - 개발자의 의도대로 예외를 발생시키는 것
+        - throw 키워드를 사용하여 발생시킬 예외 클래스의 객체지정
     
-    3. throw
-
+    3. throws(예외 처리 위임)
+        - 자신이 예외를 직접 처리하지 않고, 메서드를 호출한 곳으로 위임할 때 사용
+        - 예외를 위임받은 메서드는 자신이 직접 처리하거나 또 다른곳으로 위임 가능
 ```java
 public class assignment9 {
     public static void main(String[] args) {
@@ -60,7 +63,10 @@ public class assignment9 {
     
 ---
 ### 자바가 제공하는 예외 계층 구조
-
+<img src="../../../../resources/image/예외구조.PNG" width="80%" height="70%"></img>
+<br>
+출처 : [https://close852.tistory.com/47](https://close852.tistory.com/47)
+<br><br>
 
 ---
 ### Exception과 Error의 차이는?
