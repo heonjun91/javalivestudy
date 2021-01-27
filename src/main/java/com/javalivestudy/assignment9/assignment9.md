@@ -40,19 +40,22 @@
 public class assignment9 {
     public static void main(String[] args) {
 
-        int n=0;
+        System.out.println(1); //정상 실행
+        int[] number = {1,2,3};
 
-        try{
-            n = 5/0; // 예외 발생
-            n = 5; //실행안됨
+        try {
+            System.out.println(number[3]); //예외발생 -> catch구문으로 이동
+            System.out.println(number[1]/0); //실행되지않음
+        } catch (ArrayIndexOutOfBoundsException e){//자식먼저
+            System.out.println("ArrayIndexOutOfBoundsException" + e.getMessage()); //어떤에런지 메시지
+            e.printStackTrace(); //에러 정보 전달
+        } catch (ArithmeticException e) {//자식
+            System.out.println("ArithmeticException");
+        } catch (Exception e){ //부모
+            System.out.println("Exception");
         }
-        catch (Exception e){
-            //예외 처리
-            System.out.println("잘못된계산"); //잘못된계산 출력
-        }
-        
         finally {
-            System.out.println(n); //0 출력 (무조건실행)
+            System.out.println(3); //무조건 실행
         }
     }
 }
@@ -76,7 +79,7 @@ public class assignment9 {
 
 ---
 ### RuntimeException과 RE가 아닌 것의 차이는?
-1. Checked Exception(Exception)
+1. Checked Exception(Exception) (컴파일러가 체크하는 예외)
     - 컴파일 시점에 발생하는 예외, 개발자가 코딩시 예외처리 필수
     - 주로 프로그램의 사용자들의 동작에 의해서 발생
     - 존재하지 않는 파일 처리(FileNotFoundException)
