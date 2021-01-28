@@ -27,15 +27,19 @@
         - finally : 예외처리와 상관없이 무조건 수행되는 코드
         - 실행순서
             + 예외 발생 : try -> catch -> finally
-            + 예외 미발생 : try -> finally   
-    
-    2. throw(사용자 예외 발생)
+            + 예외 미발생 : try -> finally 
+        
+    2. try with resource 
+        - 모든작업을 끝내고나서 .close()를 내부적으로 자동수행
+       
+    3. throw(사용자 예외 발생)
         - 개발자의 의도대로 예외를 발생시키는 것
         - throw 키워드를 사용하여 발생시킬 예외 클래스의 객체지정
     
-    3. throws(예외 처리 위임)
+    4. throws(예외 처리 위임)
         - 자신이 예외를 직접 처리하지 않고, 메서드를 호출한 곳으로 위임할 때 사용
         - 예외를 위임받은 메서드는 자신이 직접 처리하거나 또 다른곳으로 위임 가능
+        - 마지막엔 try catch 문으로
 ```java
 public class assignment9 {
     public static void main(String[] args) {
@@ -57,6 +61,38 @@ public class assignment9 {
         finally {
             System.out.println(3); //무조건 실행
         }
+    }
+}
+```
+
+```java
+public class TryWithResource {
+    public static void main(String[] args) {
+
+        //모든작업을 끝내고나서 .close()를 내부적으로 자동수행
+        try(FileWriter f = new FileWriter("test.txt")){
+            f.write("TryWithResourceTest");
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+}
+```
+
+```java
+public class ThrowException {
+    public static void main(String[] args) {
+        throw new RuntimeException("문제발생"); //해당 예외를 직접 발생시킴
+    }
+}
+```
+
+```java
+public class ThrowException {
+    public static void main(String[] args) throws IOException {
+        FileWriter f = new FileWriter("test.txt");
+
     }
 }
 ```
