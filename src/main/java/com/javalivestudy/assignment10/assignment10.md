@@ -25,7 +25,7 @@
     
 2. 쓰레드(Thread)
     - 프로세스 내에서 실행되는 하나의 단위
-    - JVM에 의해 하나의 프로세스가 발생, main()안의 실행문들이 하나의 스레드
+    - 동시에 실행되어야 하는 개별적인 모듈
     - main()이외의 또다른 스레드를 만드려면 Thread 클래스 상속 / Runnable 인터페이스 구현
     - 동시에 여러개의 요청을 처리하여 속도를 빠르게 하기위해 사용 (멀티쓰레드)
     
@@ -37,7 +37,7 @@ public class assingment10 {
         ThreadClass t1 = new ThreadClass();
 
         //쓰레드 1 실행
-        t1.start();
+        t1.start();// run() 메소드 호출
         
     }
 }
@@ -60,7 +60,7 @@ public class assingment10 {
         Thread t2 = new Thread(r);
 
         //쓰레드 2 실행
-        t2.start();
+        t2.start(); //run() 메소드 호출
     }
 }
 
