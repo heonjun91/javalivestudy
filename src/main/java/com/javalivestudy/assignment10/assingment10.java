@@ -2,6 +2,9 @@ package com.javalivestudy.assignment10;
 
 public class assingment10 {
     public static void main(String[] args) {
+        //메인쓰레드
+        System.out.println(Thread.currentThread().getName());
+
         //Thread Class로 쓰레드 구현
         ThreadClass t1 = new ThreadClass();
 
@@ -9,11 +12,15 @@ public class assingment10 {
         Runnable r = new RunnableInterface();
         Thread t2 = new Thread(r);
 
+
+
         //쓰레드 1 실행
         t1.start();
 
         //쓰레드 2 실행
         t2.start();
+
+
     }
 }
 
