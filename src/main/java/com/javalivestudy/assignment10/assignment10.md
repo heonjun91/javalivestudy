@@ -102,9 +102,14 @@ class RunnableInterface implements Runnable{
 
 ---
 ### 쓰레드의 우선순위
+1. 동시성과 병렬성
+   - 동시성 : 하나의 코어에서 멀티 스레드가 번갈아가며 실행
+   - 병렬성 : 멀티 코어에서 개별 스레드를 동시에 실행
 
-
-
+<img src="../../../../resources/image/쓰레드병렬동시성.PNG" width="80%" height="70%"></img>
+<br>
+출처 : [https://deftkang.tistory.com/56](https://deftkang.tistory.com/56)
+<br><br>
 ---
 ### Main 쓰레드
 
