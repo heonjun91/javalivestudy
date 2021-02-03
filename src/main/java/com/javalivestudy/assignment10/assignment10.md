@@ -108,8 +108,11 @@ class RunnableInterface implements Runnable{
 
 <img src="../../../../resources/image/쓰레드병렬동시성.PNG" width="80%" height="70%"></img>
 <br>
-출처 : [https://deftkang.tistory.com/56](https://deftkang.tistory.com/56)
+
+   - 출처 : [https://deftkang.tistory.com/56](https://deftkang.tistory.com/56)
 <br><br>
+
+
 ---
 ### Main 쓰레드
 
