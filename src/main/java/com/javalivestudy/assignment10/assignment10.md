@@ -129,8 +129,9 @@ class RunnableInterface implements Runnable{
 
 ---
 ### Main 쓰레드
-
-
+- main() 메소드를 실행하며 시작된다
+- Main 쓰레드가 없다면 멀티쓰레드가 나올 수 없다.
+- 멀티쓰레드인 경우 Main쓰레드가 종료되어도 프로세스는 종료되지 않는다.
 
 ---
 ### 동기화
