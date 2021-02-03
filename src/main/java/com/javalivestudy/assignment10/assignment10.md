@@ -107,7 +107,7 @@ class RunnableInterface implements Runnable{
    - 병렬성 : 멀티 코어에서 개별 스레드를 동시에 실행
 
 <img src="../../../../resources/image/쓰레드병렬동시성.PNG" width="80%" height="70%"></img>
-출처 : [https://deftkang.tistory.com/56](https://deftkang.tistory.com/56)
+<br>출처 : [https://deftkang.tistory.com/56](https://deftkang.tistory.com/56)
 <br><br>
 
 
